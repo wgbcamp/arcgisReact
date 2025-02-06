@@ -1,4 +1,5 @@
 @import 'https://js.arcgis.com/4.31/@arcgis/core/assets/esri/themes/light/main.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 #root,
 html,
@@ -17,10 +18,33 @@ arcgis-zoom {
 }
 
 .topBanner {
+  align-items: center;
+  background-color: #002649;
+  color: white;
+  display: flex;
   height: 40px;
   width: 100%;
-  background-color: rgb(241, 255, 250);
-  border: solid 1px aquamarine;
+}
+
+.logo {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29.05px;
+  padding-left: 24px;
+}
+
+.title {
+  align-items: center;
+  color: white;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29.05px;
 }
 
 .mapContainer {
@@ -29,7 +53,29 @@ arcgis-zoom {
 }
 
 .dataMenu {
-  width: 50px;
-  background-color: rgb(244, 255, 230);
-  border: solid 1px yellowgreen;
+  border-right: solid 1px #B5B5B5;
+  width: 62px;
+}
+
+.dataMenuTitle {
+  align-items: center;
+  border-bottom: solid 1px #D7D7D7;
+  display: flex;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 900;
+  height: 35px;
+  justify-content: center;
+  line-height: 16.8px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  text-underline-position: from-font;
+}
+
+.dataMenuIcons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  row-gap: 30px;
 }
