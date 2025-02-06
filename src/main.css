@@ -12,6 +12,24 @@ arcgis-map {
   width: 100vw;
 }
 
-arcgis-search {
-    background-color: white;
+arcgis-zoom {
+  opacity: 0;
+}
+
+.topBanner {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(241, 255, 250);
+  border: solid 1px aquamarine;
+}
+
+.mapContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.dataMenu {
+  width: 50px;
+  background-color: rgb(244, 255, 230);
+  border: solid 1px yellowgreen;
 }

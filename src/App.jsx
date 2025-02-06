@@ -10,15 +10,22 @@ import "@arcgis/map-components/dist/components/arcgis-zoom";
 
 export default function App() {
     return (
-        <arcgis-map
-            itemId="d5dda743788a4b0688fe48f43ae7beb9"
-            onarcgisViewReadyChange={(event) => {
-                console.log("MapView ready", event);
-              }}
-        >
-            <arcgis-search position="top-right"></arcgis-search>
-            <arcgis-legend position="bottom-left"></arcgis-legend>
-            <arcgis-zoom position="bottom-right"></arcgis-zoom>
-        </arcgis-map>
+        <div>
+            <div class="topBanner"></div>
+            <div class="mapContainer">
+                <div class="dataMenu"></div>
+                    <arcgis-map
+                        itemId="d5dda743788a4b0688fe48f43ae7beb9"
+                        onarcgisViewReadyChange={(event) => {
+                            console.log("MapView ready", event);
+                        }}
+                    >
+                        <arcgis-search position="top-right"></arcgis-search>
+                        <arcgis-legend position="bottom-left"></arcgis-legend>
+                        <arcgis-zoom className="test" position="bottom-right"></arcgis-zoom>
+                    </arcgis-map>
+                
+            </div>
+        </div>
     )
 }
